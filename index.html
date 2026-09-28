@@ -8,111 +8,151 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,520&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=3">
+  <link rel="stylesheet" href="site.css?v=4">
 </head>
 <body>
+  <svg class="field" viewBox="0 0 1200 800" aria-hidden="true">
+    <g fill="none" stroke="#1d3f38" stroke-width="1.2">
+      <path d="M80 140 C 220 40, 340 220, 520 120 S 860 40, 1120 180"/>
+      <path class="flow" d="M40 520 C 260 420, 480 680, 740 500 S 1040 360, 1180 560"/>
+      <path d="M180 700 C 360 620, 540 760, 780 640"/>
+    </g>
+    <g fill="#9a3412">
+      <circle cx="80" cy="140" r="4"/>
+      <circle cx="520" cy="120" r="5"/>
+      <circle cx="1120" cy="180" r="4"/>
+      <circle cx="40" cy="520" r="4"/>
+      <circle cx="740" cy="500" r="6"/>
+      <circle cx="1180" cy="560" r="4"/>
+      <circle cx="780" cy="640" r="4"/>
+    </g>
+  </svg>
+
   <div class="sheet">
     <header class="top">
       <a class="mark" href="#top" aria-label="נעם מרוז">נ</a>
       <nav>
-        <a href="#work">ניסיון</a>
-        <a href="#projects">פרויקטים</a>
-        <a href="#skills">כישורים</a>
-        <a href="#english">English</a>
+        <a href="#work" data-he>ניסיון</a>
+        <a href="#work" data-en>Experience</a>
+        <a href="#projects" data-he>פרויקטים</a>
+        <a href="#projects" data-en>Projects</a>
+        <a href="#skills" data-he>כישורים</a>
+        <a href="#skills" data-en>Skills</a>
       </nav>
+      <div class="lang" role="group" aria-label="שפה">
+        <button type="button" data-set-lang="he" aria-pressed="true">עברית</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="eyebrow"><span>חולון</span><span>B.Sc. מדעי הנתונים · שנה ג׳</span><span>Colman</span></p>
+        <p class="eyebrow"><span>חולון · Holon</span><span>B.Sc. · שנה ג׳</span><span>Colman</span></p>
         <h1>נעם מרוז</h1>
         <p class="latin">Noam Meroz</p>
-        <p class="role">מתמחה במחקר ופיתוח במדעי הנתונים ובינה מלאכותית</p>
-        <p class="summary">סטודנט שנה ג׳ לתואר במדעי הנתונים במכללה למנהל. בונה ב-Python צינורות שמשווים מודלי ראייה-שפה מקומיים ל-API בענן, ומנתבים עיבוד של מסמכים פיננסיים כדי להגביל עלות GPU ו-API. לפני כן הובלתי צוות מכירות.</p>
+        <p class="role" data-he>מתמחה במחקר ופיתוח במדעי הנתונים ובינה מלאכותית</p>
+        <p class="role" data-en>Data Science and AI R&amp;D Intern</p>
+        <p class="summary" data-he>סטודנט שנה ג׳ למדעי הנתונים במכללה למנהל. ב-Python אני משווה מודלי ראייה-שפה מקומיים ל-API בענן, ומנתב מסמכים פיננסיים כדי להגביל עלות. לפני כן הובלתי צוות מכירות.</p>
+        <p class="summary" data-en>Third-year B.Sc. Data Science student at Colman, interning at Sagole. I compare local vision-language models with cloud APIs and route financial documents to limit cost. I previously led a sales team.</p>
         <ul class="facts">
-          <li><strong>2026</strong><span>מתמחה ב-Sagole</span></li>
-          <li><strong>2024</strong><span>תחילת התואר</span></li>
-          <li><strong>8</strong><span>אנשים בצוות המכירות</span></li>
+          <li><strong>2026</strong><span data-he>מתמחה ב-Sagole</span><span data-en>Intern at Sagole</span></li>
+          <li><strong>2024</strong><span data-he>תחילת התואר</span><span data-en>Degree started</span></li>
+          <li><strong>8</strong><span data-he>אנשים בצוות המכירות</span><span data-en>people on the sales team</span></li>
         </ul>
         <p class="contact">
-          <a href="mailto:Noam1pro.M@gmail.com">Noam1pro.M@gmail.com</a>
-          <a href="tel:+972523309070" dir="ltr">052-330-9070</a>
-          <a href="https://www.linkedin.com/in/noam-meroz-19a518384">LinkedIn</a>
-          <a href="https://github.com/noam2177">GitHub</a>
+          <a class="pill" href="mailto:Noam1pro.M@gmail.com">Noam1pro.M@gmail.com</a>
+          <a class="pill" href="tel:+972523309070" dir="ltr">052-330-9070</a>
+          <a class="pill" href="https://www.linkedin.com/in/noam-meroz-19a518384">LinkedIn</a>
+          <a class="pill" href="https://github.com/noam2177">GitHub</a>
         </p>
       </section>
 
       <section id="work">
         <header class="sec-head">
           <p class="num">01</p>
-          <h2>ניסיון</h2>
+          <h2 data-he>ניסיון</h2>
+          <h2 data-en>Experience</h2>
         </header>
-        <article class="job">
-          <div class="when">
-            <p>אוגוסט 2026 – היום</p>
-            <p>Sagole</p>
-          </div>
-          <div>
-            <h3>מתמחה מחקר ופיתוח, מדעי הנתונים ובינה מלאכותית</h3>
-            <ul>
-              <li>ביצעתי בנצ׳מרק למודלי ראייה-שפה מקומיים מול API ראייה בענן על תמונות של מסמכים פיננסיים, ומדדתי איך רזולוציה משנה את עלות הטוקנים.</li>
-              <li>תכננתי צינורות היברידיים של OCR וראייה שמסווגים שדות במסמכים פיננסיים ומאמתים התאמה מדויקת.</li>
-              <li>תכננתי שכבת ולידציה ב-Python שמריצה מסננים פשוטים לפני מודל כבד, וכך קיצרתי זמן GPU והוצאה על API.</li>
-              <li>מימשתי בדיקות JSON וחבילת pytest שמדרגת פלטים מול סט אמת קבוע. נתוני המסמכים נשארים על המחשב.</li>
-            </ul>
-          </div>
-        </article>
-        <article class="job">
-          <div class="when">
-            <p>2019 – 2020</p>
-            <p>רילוקיישן לאירופה</p>
-          </div>
-          <div>
-            <h3>ראש צוות מכירות</h3>
-            <ul>
-              <li>ניהלתי צוות של 8 אנשים במשמרות יומיות, בהעברות משמרת ובמעקב KPI.</li>
-              <li>ניתחתי נתוני מכירות ותפוקה, זיהיתי את השלבים האיטיים, וקיצרתי את תהליך העבודה.</li>
-            </ul>
-          </div>
-        </article>
+
+        <details class="job" open>
+          <summary>
+            <span class="when">2026 – <span data-he>היום</span><span data-en>now</span></span>
+            <span class="job-title" data-he>מתמחה מחקר ופיתוח · Sagole</span>
+            <span class="job-title" data-en>Data Science and AI R&amp;D Intern · Sagole</span>
+            <span class="peek" data-he>ולידציה לפני מודל כבד, כדי לחסוך GPU ו-API.</span>
+            <span class="peek" data-en>Cheap checks before a heavier model, to cut GPU and API cost.</span>
+          </summary>
+          <ul data-he>
+            <li>ביצעתי בנצ׳מרק למודלי ראייה-שפה מקומיים מול API ראייה בענן על תמונות של מסמכים פיננסיים, ומדדתי איך רזולוציה משנה את עלות הטוקנים.</li>
+            <li>תכננתי צינורות היברידיים של OCR וראייה שמסווגים שדות במסמכים פיננסיים ומאמתים התאמה מדויקת.</li>
+            <li>תכננתי שכבת ולידציה ב-Python שמריצה מסננים פשוטים לפני מודל כבד.</li>
+            <li>מימשתי בדיקות JSON וחבילת pytest מול סט אמת קבוע. נתוני המסמכים נשארים על המחשב.</li>
+          </ul>
+          <ul data-en>
+            <li>Benchmarked local vision-language models against cloud vision APIs on financial-document images, and measured how resolution changes token cost.</li>
+            <li>Built hybrid OCR and vision pipelines that classify fields and check them for an exact match.</li>
+            <li>Built a Python validation layer so plain filters run before a heavier model.</li>
+            <li>Added JSON checks and a pytest suite against a fixed ground-truth set. Document data stays on the machine.</li>
+          </ul>
+        </details>
+
+        <details class="job">
+          <summary>
+            <span class="when">2019 – 2020</span>
+            <span class="job-title" data-he>ראש צוות מכירות · רילוקיישן לאירופה</span>
+            <span class="job-title" data-en>Sales Team Lead · EU relocation</span>
+            <span class="peek" data-he>צוות של 8, KPI, וקיצור השלבים האיטיים.</span>
+            <span class="peek" data-en>Eight people, KPIs, and a shorter slow path.</span>
+          </summary>
+          <ul data-he>
+            <li>ניהלתי צוות של 8 אנשים במשמרות יומיות, בהעברות משמרת ובמעקב KPI.</li>
+            <li>ניתחתי נתוני מכירות ותפוקה, זיהיתי את השלבים האיטיים, וקיצרתי את תהליך העבודה.</li>
+          </ul>
+          <ul data-en>
+            <li>Directed an 8-person team through daily shifts, handoffs, and KPI tracking.</li>
+            <li>Analyzed sales and throughput, found the slow steps, and shortened the workflow.</li>
+          </ul>
+        </details>
       </section>
 
       <section id="projects">
         <header class="sec-head">
           <p class="num">02</p>
-          <h2>פרויקטים</h2>
+          <h2 data-he>פרויקטים</h2>
+          <h2 data-en>Projects</h2>
+          <p class="hint" data-he>לחיצה פותחת את הפירוט.</p>
+          <p class="hint" data-en>Click a card for the detail.</p>
         </header>
         <div class="cards">
-          <article>
-            <p class="tag">2026</p>
-            <h3>מערכת סוכנים מקומית</h3>
-            <p>מפצלת עבודה בין מודלים מקומיים, מריצה אוטומציות, ומודדת באיזו תדירות התשובות סוטות מהמקור.</p>
-          </article>
-          <article>
-            <p class="tag">2025–2026</p>
-            <h3>אפליקציית ווב לקורס</h3>
-            <p>Node.js, Express ו-MongoDB, כולל אימות משתמשים.</p>
-          </article>
-          <article>
-            <p class="tag">2024</p>
-            <h3>דשבורד Tableau</h3>
-            <p>סט עסקאות, עם מדדים ממדיים.</p>
-          </article>
-          <article>
-            <p class="tag"><a href="https://github.com/noam2177/bloomgrid">BloomGrid</a></p>
-            <h3>פאזל בלוקים</h3>
-            <p>לוח 8×8 ב-Godot. אופליין, בלי חשבון.</p>
-          </article>
-          <article>
-            <p class="tag"><a href="https://github.com/noam2177/sniper-burrow">בור-צלף</a></p>
-            <h3>משחק כיוון</h3>
-            <p>מטרות יוצאות ממחילות, שעון יורד, ובוחרים יכולת אחת מתוך חמש.</p>
-          </article>
-          <article>
-            <p class="tag"><a href="https://github.com/noam2177/he-segment">he-segment</a></p>
-            <h3>חיתוך עברית</h3>
-            <p>פרוסה ראשונה לחיתוך מילות יחס דבוקות. לידה <a href="https://github.com/noam2177/he-nlp">he-nlp</a>, בסיס לקידומות.</p>
-          </article>
+          <button type="button" class="tile" data-kicker="2026" data-title-he="מערכת סוכנים מקומית" data-title-en="Local agent system" data-body-he="מפצלת עבודה בין מודלים מקומיים, מריצה אוטומציות, ומודדת באיזו תדירות התשובות סוטות מהמקור." data-body-en="Splits work across local models, keeps automations running, and measures how often answers drift from the source.">
+            <span class="tag">2026</span>
+            <span class="tile-title" data-he>מערכת סוכנים מקומית</span>
+            <span class="tile-title" data-en>Local agent system</span>
+          </button>
+          <button type="button" class="tile" data-kicker="2025–2026" data-title-he="אפליקציית ווב לקורס" data-title-en="Course web app" data-body-he="Node.js, Express ו-MongoDB, כולל אימות משתמשים." data-body-en="Node.js, Express, and MongoDB, including authentication.">
+            <span class="tag">2025–2026</span>
+            <span class="tile-title" data-he>אפליקציית ווב לקורס</span>
+            <span class="tile-title" data-en>Course web app</span>
+          </button>
+          <button type="button" class="tile" data-kicker="2024" data-title-he="דשבורד Tableau" data-title-en="Tableau dashboard" data-body-he="סט עסקאות, עם מדדים ממדיים." data-body-en="A transaction set, with dimensional measures.">
+            <span class="tag">2024</span>
+            <span class="tile-title" data-he>דשבורד Tableau</span>
+            <span class="tile-title" data-en>Tableau dashboard</span>
+          </button>
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/bloomgrid" data-title-he="BloomGrid" data-title-en="BloomGrid" data-body-he="פאזל בלוקים על לוח 8×8 ב-Godot. אופליין, בלי חשבון." data-body-en="An 8×8 block puzzle in Godot. Offline, no account.">
+            <span class="tag">GitHub</span>
+            <span class="tile-title">BloomGrid</span>
+          </button>
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/sniper-burrow" data-title-he="בור-צלף" data-title-en="Sniper Burrow" data-body-he="משחק כיוון. מטרות יוצאות ממחילות, שעון יורד, ובוחרים יכולת אחת מתוך חמש." data-body-en="An aim game. Targets leave burrows, a clock runs down, and you pick one of five abilities.">
+            <span class="tag">GitHub</span>
+            <span class="tile-title" data-he>בור-צלף</span>
+            <span class="tile-title" data-en>Sniper Burrow</span>
+          </button>
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/he-segment" data-title-he="חיתוך עברית" data-title-en="Hebrew segmentation" data-body-he="he-segment: פרוסה ראשונה לחיתוך מילות יחס דבוקות. he-nlp: בסיס לקידומות." data-body-en="he-segment is a first slice for proclitics. he-nlp is a prefix baseline." data-href2="https://github.com/noam2177/he-nlp">
+            <span class="tag">GitHub</span>
+            <span class="tile-title" data-he>חיתוך עברית</span>
+            <span class="tile-title" data-en>Hebrew segmentation</span>
+          </button>
         </div>
       </section>
 
@@ -120,41 +160,25 @@
         <div>
           <header class="sec-head">
             <p class="num">03</p>
-            <h2>השכלה</h2>
+            <h2 data-he>השכלה</h2>
+            <h2 data-en>Education</h2>
           </header>
-          <h3 class="plain">B.Sc. במדעי הנתונים</h3>
-          <p class="muted">המכללה למנהל (Colman), 2024 – היום, שנה ג׳.</p>
-          <p class="muted">קורסים: למידת מכונה, סטטיסטיקה, SQL, אלגוריתמים, מבני נתונים.</p>
+          <h3 class="plain">B.Sc. <span data-he>במדעי הנתונים</span><span data-en>Data Science</span></h3>
+          <p class="muted" data-he>המכללה למנהל (Colman), 2024 – היום, שנה ג׳.</p>
+          <p class="muted" data-en>College of Management (Colman), 2024 – present, year 3.</p>
+          <p class="muted" data-he>קורסים: למידת מכונה, סטטיסטיקה, SQL, אלגוריתמים, מבני נתונים.</p>
+          <p class="muted" data-en>Coursework: Machine Learning, Statistics, SQL, Algorithms, Data Structures.</p>
         </div>
         <div>
           <header class="sec-head">
             <p class="num">04</p>
-            <h2>כישורים</h2>
+            <h2 data-he>כישורים</h2>
+            <h2 data-en>Skills</h2>
           </header>
-          <dl class="skills">
-            <div><dt>נתונים</dt><dd>Python, Pandas, NumPy, scikit-learn, SQL, Tableau, Excel</dd></div>
-            <div><dt>הנדסה</dt><dd>pytest, Git, Linux, Node.js, MongoDB</dd></div>
-            <div><dt>מסמכים</dt><dd>OCR, מודלי ראייה-שפה, FinOps</dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section id="english" lang="en" dir="ltr">
-        <header class="sec-head">
-          <p class="num">05</p>
-          <h2>English</h2>
-        </header>
-        <p class="summary">Third-year B.Sc. Data Science student at the College of Management (Colman), and a Data Science and AI R&D intern at Sagole. I build Python pipelines that compare local vision-language models with cloud APIs and route financial-document work to limit GPU and API cost. I also led an 8-person sales team.</p>
-        <div class="en-grid">
-          <div>
-            <h3>Experience</h3>
-            <p><strong>Data Science and AI R&D Intern, Sagole</strong> · Aug 2026 – present. Benchmarked local vision-language models against cloud vision APIs on financial-document images. Built hybrid OCR and vision pipelines, a Python validation layer that runs cheap filters before a heavier model, and pytest checks against a fixed ground-truth set. Document data stays on the machine.</p>
-            <p><strong>Sales Team Lead, EU relocation operations</strong> · 2019 – 2020. Directed an 8-person team through shifts, handoffs, and KPIs. Found the slow steps in sales throughput and shortened the workflow.</p>
-          </div>
-          <div>
-            <h3>Also</h3>
-            <p>A local agent system that splits work across models and measures drift from the source. A course web app in Node.js, Express, and MongoDB. A Tableau dashboard on transactions. Public code: <a href="https://github.com/noam2177">github.com/noam2177</a>.</p>
-            <p>Skills: Python, Pandas, NumPy, scikit-learn, SQL, pytest, Git, Linux, FinOps, Tableau, Excel, OCR, vision-language models, MongoDB, Node.js.</p>
+          <div class="pills">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>SQL</span>
+            <span>pytest</span><span>Git</span><span>Linux</span><span>Tableau</span><span>Excel</span>
+            <span>OCR</span><span>FinOps</span><span>Node.js</span><span>MongoDB</span>
           </div>
         </div>
       </section>
@@ -165,5 +189,21 @@
       <p><a href="mailto:Noam1pro.M@gmail.com">Noam1pro.M@gmail.com</a></p>
     </footer>
   </div>
+
+  <dialog id="detail">
+    <form method="dialog">
+      <button class="close" value="cancel" data-he>סגור</button>
+      <button class="close" value="cancel" data-en>Close</button>
+    </form>
+    <p class="tag" id="detail-kicker"></p>
+    <h3 id="detail-title"></h3>
+    <p id="detail-body"></p>
+    <p class="detail-links">
+      <a id="detail-link" href="" hidden data-he>לקוד</a>
+      <a id="detail-link-en" href="" hidden data-en>Code</a>
+      <a id="detail-link2" href="" hidden>he-nlp</a>
+    </p>
+  </dialog>
+  <script src="site.js?v=4"></script>
 </body>
 </html>
