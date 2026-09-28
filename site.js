@@ -8,9 +8,12 @@ const link = document.querySelector("#detail-link");
 const linkEn = document.querySelector("#detail-link-en");
 const link2 = document.querySelector("#detail-link2");
 
+const closeBtn = document.querySelector("#detail-close");
+
 function setLang(lang) {
   root.lang = lang === "en" ? "en" : "he";
   root.dir = root.lang === "en" ? "ltr" : "rtl";
+  closeBtn.textContent = root.lang === "en" ? "Close" : "סגור";
   langButtons.forEach((button) => {
     button.setAttribute("aria-pressed", button.dataset.setLang === root.lang ? "true" : "false");
   });

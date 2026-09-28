@@ -32,7 +32,7 @@ html[lang="en"] [data-he] { display: none !important; }
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.16;
+  opacity: 0.2;
 }
 
 .flow {
@@ -51,6 +51,7 @@ html[lang="en"] [data-he] { display: none !important; }
   width: min(1080px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1.25rem 0 3rem;
+  background: var(--paper);
 }
 
 .top {
