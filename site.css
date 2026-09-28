@@ -317,6 +317,7 @@ h3 { margin: 0 0 0.4rem; font-size: 1.2rem; }
 
 .tag { margin: 0; color: var(--signal); font-size: 0.85rem; font-weight: 500; }
 .tile-title { font-weight: 700; font-size: 1.05rem; }
+.tile-line { color: var(--muted); font-size: 0.95rem; }
 
 .split {
   display: grid;

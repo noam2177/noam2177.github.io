@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,520&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=10">
+  <link rel="stylesheet" href="site.css?v=11">
 </head>
 <body>
   <svg class="field" viewBox="0 0 1200 800" aria-hidden="true">
@@ -144,38 +144,50 @@
           <p class="num">02</p>
           <h2 data-he>פרויקטים</h2>
           <h2 data-en>Projects</h2>
-          <p class="hint" data-he>לחיצה פותחת את הפירוט.</p>
-          <p class="hint" data-en>Click a card for the detail.</p>
+          <p class="hint" data-he>לחיצה פותחת קישור לקוד, כשיש.</p>
+          <p class="hint" data-en>A click opens the code link, when there is one.</p>
         </header>
         <div class="cards">
-          <button type="button" class="tile" data-kicker="2026" data-title-he="מערכת סוכנים מקומית" data-title-en="Local agent system" data-body-he="מפצלת עבודה בין מודלים מקומיים, מריצה אוטומציות, ומודדת באיזו תדירות התשובות סוטות מהמקור." data-body-en="Splits work across local models, keeps automations running, and measures how often answers drift from the source.">
+          <button type="button" class="tile" data-kicker="2026" data-title-he="מערכת סוכנים מקומית" data-title-en="Local agent system" data-body-he="מערכת שמחלקת עבודה בין מודלים מקומיים, ובודקת אם התשובה נשארה קרובה למקור." data-body-en="A system that splits work across local models, and checks that the answer stays close to the source.">
             <span class="tag">2026</span>
             <span class="tile-title" data-he>מערכת סוכנים מקומית</span>
             <span class="tile-title" data-en>Local agent system</span>
+            <span class="tile-line" data-he>מחלקת עבודה בין מודלים, ובודקת שהתשובה נשארה קרובה למקור.</span>
+            <span class="tile-line" data-en>Splits work across models, and checks the answer against the source.</span>
           </button>
-          <button type="button" class="tile" data-kicker="2025–2026" data-title-he="אפליקציית ווב לקורס" data-title-en="Course web app" data-body-he="Node.js, Express ו-MongoDB, כולל אימות משתמשים." data-body-en="Node.js, Express, and MongoDB, including authentication.">
+          <button type="button" class="tile" data-kicker="2025–2026" data-title-he="אתר לקורס" data-title-en="Course website" data-body-he="אתר לקורס, עם התחברות של משתמש. בנוי ב-Node.js, Express ו-MongoDB." data-body-en="A course website with user login, built in Node.js, Express, and MongoDB.">
             <span class="tag">2025–2026</span>
-            <span class="tile-title" data-he>אפליקציית ווב לקורס</span>
-            <span class="tile-title" data-en>Course web app</span>
+            <span class="tile-title" data-he>אתר לקורס</span>
+            <span class="tile-title" data-en>Course website</span>
+            <span class="tile-line" data-he>אתר עם התחברות. Node.js, Express ו-MongoDB.</span>
+            <span class="tile-line" data-en>A site with login. Node.js, Express, and MongoDB.</span>
           </button>
-          <button type="button" class="tile" data-kicker="2024" data-title-he="דשבורד Tableau" data-title-en="Tableau dashboard" data-body-he="סט עסקאות, עם מדדים ממדיים." data-body-en="A transaction set, with dimensional measures.">
+          <button type="button" class="tile" data-kicker="2024" data-title-he="לוח עסקאות" data-title-en="Transactions board" data-body-he="לוח Tableau שמציג עסקאות לפי חתכים, לא רק סכום אחד." data-body-en="A Tableau board that shows transactions by slice, not only one total.">
             <span class="tag">2024</span>
-            <span class="tile-title" data-he>דשבורד Tableau</span>
-            <span class="tile-title" data-en>Tableau dashboard</span>
+            <span class="tile-title" data-he>לוח עסקאות</span>
+            <span class="tile-title" data-en>Transactions board</span>
+            <span class="tile-line" data-he>עסקאות לפי חתכים, ב-Tableau.</span>
+            <span class="tile-line" data-en>Transactions by slice, in Tableau.</span>
           </button>
-          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/bloomgrid" data-title-he="BloomGrid" data-title-en="BloomGrid" data-body-he="פאזל בלוקים על לוח 8×8 ב-Godot. אופליין, בלי חשבון." data-body-en="An 8×8 block puzzle in Godot. Offline, no account.">
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/bloomgrid" data-title-he="BloomGrid" data-title-en="BloomGrid" data-body-he="פאזל של בלוקים על לוח 8 על 8. רץ בלי רשת ובלי חשבון." data-body-en="A block puzzle on an 8 by 8 board. It runs without a network and without an account.">
             <span class="tag">GitHub</span>
             <span class="tile-title">BloomGrid</span>
+            <span class="tile-line" data-he>פאזל בלוקים על לוח 8 על 8, בלי רשת ובלי חשבון.</span>
+            <span class="tile-line" data-en>An 8 by 8 block puzzle, with no network and no account.</span>
           </button>
-          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/sniper-burrow" data-title-he="בור-צלף" data-title-en="Sniper Burrow" data-body-he="משחק כיוון. מטרות יוצאות ממחילות, שעון יורד, ובוחרים יכולת אחת מתוך חמש." data-body-en="An aim game. Targets leave burrows, a clock runs down, and you pick one of five abilities.">
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/sniper-burrow" data-title-he="בור-צלף" data-title-en="Sniper Burrow" data-body-he="משחק ירי. מטרות יוצאות ממחילות, הזמן נגמר, ובוחרים יכולת אחת מתוך חמש." data-body-en="A shooting game. Targets come out of holes, time runs out, and you pick one ability out of five.">
             <span class="tag">GitHub</span>
             <span class="tile-title" data-he>בור-צלף</span>
             <span class="tile-title" data-en>Sniper Burrow</span>
+            <span class="tile-line" data-he>מטרות יוצאות ממחילות, הזמן נגמר, ובוחרים יכולת אחת מתוך חמש.</span>
+            <span class="tile-line" data-en>Targets leave holes, time runs out, then you pick one of five abilities.</span>
           </button>
-          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/he-segment" data-title-he="חיתוך עברית" data-title-en="Hebrew segmentation" data-body-he="he-segment: פרוסה ראשונה לחיתוך מילות יחס דבוקות. he-nlp: בסיס לקידומות." data-body-en="he-segment is a first slice for proclitics. he-nlp is a prefix baseline." data-href2="https://github.com/noam2177/he-nlp">
+          <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/he-segment" data-title-he="כלים לעברית" data-title-en="Hebrew tools" data-body-he="שני כלים קטנים. אחד מפריד מילות יחס שדבוקות למילה, והשני בודק קידומות." data-body-en="Two small tools. One splits prepositions stuck to a word, and the other checks prefixes." data-href2="https://github.com/noam2177/he-nlp">
             <span class="tag">GitHub</span>
-            <span class="tile-title" data-he>חיתוך עברית</span>
-            <span class="tile-title" data-en>Hebrew segmentation</span>
+            <span class="tile-title" data-he>כלים לעברית</span>
+            <span class="tile-title" data-en>Hebrew tools</span>
+            <span class="tile-line" data-he>אחד מפריד מילות יחס דבוקות, והשני בודק קידומות.</span>
+            <span class="tile-line" data-en>One splits attached prepositions, and the other checks prefixes.</span>
           </button>
         </div>
       </section>
