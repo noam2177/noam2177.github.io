@@ -123,13 +123,15 @@ nav a:hover, footer a:hover, .detail-links a:hover, a:focus-visible, button:focu
 
 .hero-top {
   display: grid;
-  grid-template-columns: 16rem 1fr;
-  gap: 1.6rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 13.5rem;
+  gap: 2rem;
+  align-items: start;
 }
 
+.identity { padding-top: 0.15rem; }
+
 .portrait {
-  width: 100%;
+  width: 13.5rem;
   height: auto;
   display: block;
   border-radius: 22px;
@@ -170,7 +172,7 @@ nav a:hover, footer a:hover, .detail-links a:hover, a:focus-visible, button:focu
 
 h1 {
   margin: 0;
-  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  font-size: clamp(3rem, 7vw, 5rem);
   line-height: 0.92;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -184,7 +186,7 @@ h1 {
   color: var(--signal);
 }
 
-.role { margin: 0.9rem 0 0.35rem; font-size: 1.2rem; font-weight: 500; }
+.role { margin: 0.85rem 0 0; font-size: 1.15rem; font-weight: 500; }
 
 .summary { margin: 0; max-width: 40rem; }
 
@@ -374,7 +376,7 @@ footer p { margin: 0; }
 
 @media (max-width: 800px) {
   .focus, .cards, .split, .hero-top { grid-template-columns: 1fr; }
-  .portrait { width: min(18rem, 78%); justify-self: center; }
+  .portrait { width: min(16rem, 72%); }
   .job summary { grid-template-columns: 1fr; }
   .when { grid-row: auto; }
   .job summary::after { grid-column: 1; }
