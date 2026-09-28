@@ -121,6 +121,21 @@ nav a:hover, footer a:hover, .detail-links a:hover, a:focus-visible, button:focu
 
 .hero { padding: 1.6rem 0 0.4rem; }
 
+.hero-top {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 1.15rem;
+  align-items: end;
+}
+
+.portrait {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+}
+
 .hero > * {
   animation: rise 0.55s ease both;
 }
@@ -357,7 +372,8 @@ footer {
 footer p { margin: 0; }
 
 @media (max-width: 800px) {
-  .focus, .cards, .split { grid-template-columns: 1fr; }
+  .focus, .cards, .split, .hero-top { grid-template-columns: 1fr; }
+  .portrait { width: min(16rem, 100%); }
   .job summary { grid-template-columns: 1fr; }
   .when { grid-row: auto; }
   .job summary::after { grid-column: 1; }
