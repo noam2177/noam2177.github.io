@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>משחקים בנייד</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --ok: #4ade80;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Heebo", "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #1e3a5f 0%, var(--bg) 55%);
+      color: var(--text);
+      min-height: 100dvh;
+      padding: max(16px, env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom));
+    }
+    h1 { font-size: clamp(1.5rem, 5vw, 2rem); margin: 0 0 6px; }
+    p.lead { margin: 0 0 20px; color: var(--muted); line-height: 1.5; max-width: 36rem; }
+    .grid { display: grid; gap: 12px; max-width: 520px; }
+    a.card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: color-mix(in srgb, var(--card) 92%, #000);
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 16px 18px;
+      touch-action: manipulation;
+      min-height: 72px;
+    }
+    a.card:active { transform: scale(0.98); }
+    a.card h2 { margin: 0 0 6px; font-size: 1.15rem; }
+    a.card p { margin: 0; font-size: 0.92rem; color: var(--muted); line-height: 1.45; }
+    .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ok);
+      margin-bottom: 6px;
+    }
+    .tag.soon { color: #fbbf24; }
+    footer { margin-top: 28px; font-size: 0.85rem; color: var(--muted); }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <h1>משחקים מהטלפון</h1>
+  <p class="lead">קישורים מותאמים לנייד — מגע, מסך מלא, ובלי התקנה כשאפשר בדפדפן.</p>
+  <div class="grid">
+    <a class="card" href="https://noam2177.github.io/sniper-burrow/">
+      <span class="tag">דפדפן · מגע</span>
+      <h2>בור-צלף</h2>
+      <p>כיוון במגע, כפתורי ירי ונשימה. עובד בספארי וכרום.</p>
+    </a>
+    <a class="card" href="https://coc-tournament.lovable.app/">
+      <span class="tag">אתר · PWA</span>
+      <h2>טורניר Clash</h2>
+      <p>הרשמה, צ'ק-אין וארכיון — מותאם לנייד.</p>
+    </a>
+    <a class="card" href="https://coclz-connect.lovable.app/">
+      <span class="tag">אתר · PWA</span>
+      <h2>CoCLZ</h2>
+      <p>שיתוף בסיסים וצבאות בקהילה.</p>
+    </a>
+    <a class="card" href="https://github.com/noam2177/bloomgrid/blob/main/docs/MOBILE_PLAY.md">
+      <span class="tag soon">אנדרואיד / Web</span>
+      <h2>BloomGrid</h2>
+      <p>פאזל בלוקים ב-Godot — APK או גרסת דפדפן אחרי ייצוא Web (מדריך בקישור).</p>
+    </a>
+  </div>
+  <footer>
+    <a href="../">← חזרה לאתר האישי</a>
+  </footer>
+</body>
+</html>
