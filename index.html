@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;0,9..144,680;1,9..144,520&family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=12">
+  <link rel="stylesheet" href="site.css?v=13">
 </head>
 <body>
   <svg class="field" viewBox="0 0 1200 800" aria-hidden="true">
@@ -61,18 +61,6 @@
         <p class="summary" data-en>Third-year data science student at the College of Management. In Python I compare local models with cloud calls on financial documents, to keep the cost down. Before that I led a sales team.</p>
         <div class="focus">
           <div>
-            <p class="tag" data-he>תכונות</p>
-            <p class="tag" data-en>Strengths</p>
-            <ul>
-              <li data-he>חרוץ</li>
-              <li data-en>Diligent</li>
-              <li data-he>אנליטי</li>
-              <li data-en>Analytical</li>
-              <li data-he>מסודר</li>
-              <li data-en>Organized</li>
-            </ul>
-          </div>
-          <div>
             <p class="tag" data-he>תחומי עניין</p>
             <p class="tag" data-en>Interests</p>
             <ul>
@@ -104,7 +92,7 @@
             <span class="when">2026 – <span data-he>היום</span><span data-en>now</span></span>
             <span class="job-title" data-he>מתמחה במדעי הנתונים ובמחקר ופיתוח · Sagole</span>
             <span class="job-title" data-en>Data science and R&amp;D intern · Sagole</span>
-            <span class="peek" data-he>בדיקות קלות לפני מודל כבד, כדי לחסוך זמן מחשוב וקריאות ענן.</span>
+            <span class="peek" data-he>פיתוח שכבת וולידציה (Gatekeeper) בפייתון, ואופטימיזציית זמני ריצה (Latency) ועלויות עבור מודלי שפה וראייה (LLM/VLM).</span>
             <span class="peek" data-en>Light checks before the heavy model, to save compute time and cloud calls.</span>
           </summary>
           <ul data-he>
@@ -149,33 +137,56 @@
           <p class="hint" data-en>On a card with code, a click opens the link.</p>
         </header>
         <div class="cards">
-          <button type="button" class="tile" data-kicker="2026" data-title-he="מערכת סוכנים מקומית" data-title-en="Local agent system" data-body-he="נותנים משימה ומקבלים תשובה שנבדקה מול המקור, לא ניסוח חופשי של מודל אחד.
-בניתי מערכת מקומית שמפצלת את המשימה בין כמה מודלים, ומשווה את התשובה לטקסט שממנו היא אמורה לבוא." data-body-en="You give it a task and get an answer checked against the source, not a free rewrite from one model.
-I built a local system that splits the task across several models, then compares the answer to the text it is supposed to come from.">
+          <button type="button" class="tile" data-kicker="2026" data-title-he="Scraping Hub" data-title-en="Scraping Hub" data-body-he="פיתוח שירות מיקרו לחילוץ נתונים מבוסס פייתון עם מטמון ב-DuckDB.
+מעבד כתובות URL, שומר תשובות במטמון, ומאיץ שאילתות חוזרות." data-body-en="Python microservice for URL extraction with a DuckDB cache.
+Processes URLs, caches responses, and speeds up repeat queries.">
             <span class="tag">2026</span>
-            <span class="tile-title" data-he>מערכת סוכנים מקומית</span>
-            <span class="tile-title" data-en>Local agent system</span>
-            <span class="tile-line" data-he>נותנים משימה ומקבלים תשובה שנבדקה מול המקור, לא ניסוח חופשי של מודל אחד. בניתי מערכת מקומית שמפצלת את המשימה בין כמה מודלים, ומשווה את התשובה לטקסט שממנו היא אמורה לבוא.</span>
-            <span class="tile-line" data-en>You give it a task and get an answer checked against the source, not a free rewrite from one model. I built a local system that splits the task across several models, then compares the answer to the text it is supposed to come from.</span>
+            <span class="tile-title">Scraping Hub</span>
+            <span class="tile-line" data-he>פיתוח שירות מיקרו לחילוץ נתונים מבוסס פייתון עם מטמון ב-DuckDB. מעבד כתובות ומאיץ שאילתות חוזרות.</span>
+            <span class="tile-line" data-en>Python microservice for data extraction with DuckDB caching. Processes URLs and speeds up repeat queries.</span>
           </button>
-          <button type="button" class="tile" data-kicker="2025–2026" data-title-he="אתר לקורס" data-title-en="Course site" data-body-he="מתחברים עם משתמש, ורק אז נכנסים לאתר הקורס.
-כתבתי את האתר ב-JavaScript: Node.js ו-Express בצד השרת, ו-MongoDB שומר את הנתונים." data-body-en="You sign in, and only then you enter the course site.
+          <button type="button" class="tile" data-kicker="2026" data-title-he="Job-Hub Analytics" data-title-en="Job-Hub Analytics" data-body-he="צינור נתונים בעלות נמוכה ב-GCP: Pub/Sub, BigQuery ומדדים אישיים לקריירה.
+מחבר נתונים מקומיים לענן לניתוח." data-body-en="Low-cost GCP pipeline: Pub/Sub and BigQuery for personal career metrics.
+Connects local data to the cloud for analytics.">
+            <span class="tag">2026</span>
+            <span class="tile-title" data-he>Job-Hub Analytics</span>
+            <span class="tile-title" data-en>Job-Hub Analytics</span>
+            <span class="tile-line" data-he>צינור נתונים ב-GCP (Pub/Sub, BigQuery) למעקב מדדים אישיים בקריירה.</span>
+            <span class="tile-line" data-en>GCP data pipeline (Pub/Sub, BigQuery) to track personal career metrics.</span>
+          </button>
+          <button type="button" class="tile" data-kicker="2026" data-title-he="OpenClaw Operations Hub" data-title-en="OpenClaw Operations Hub" data-body-he="מרכז אוטומציה אישי: בוטים בטלגרם, מצב ב-SQLite, ו-Playwright למשימות רשת עם אישור אנושי לפני פעולות רגישות." data-body-en="Personal automation hub: Telegram bots, SQLite state, and Playwright for web tasks with human approval on sensitive steps.">
+            <span class="tag">2026</span>
+            <span class="tile-title">OpenClaw</span>
+            <span class="tile-line" data-he>מרכז workflow אישי: טלגרם, SQLite ו-Playwright עם אישור מפעיל (human-in-the-loop).</span>
+            <span class="tile-line" data-en>Personal workflow hub: Telegram, SQLite, and Playwright with human-in-the-loop approvals.</span>
+          </button>
+          <button type="button" class="tile" data-kicker="2026 · Rust" data-title-he="מנוע שליפה מקבילית" data-title-en="High-concurrency extractor" data-body-he="שילוב מנוע אסינכרוני ב-Rust לשיפור ביצועי שליפת נתונים מקבילית.
+מודול Rust (tokio, reqwest) משולב בצד השרת בפייתון." data-body-en="Async Rust core for faster parallel fetching.
+Rust module (tokio, reqwest) integrated into the Python backend.">
+            <span class="tag">Rust</span>
+            <span class="tile-title" data-he>מנוע שליפה מקבילית</span>
+            <span class="tile-title" data-en>Parallel fetch core</span>
+            <span class="tile-line" data-he>שילוב מנוע אסינכרוני ב-Rust לשיפור ביצועי שליפת נתונים מקבילית.</span>
+            <span class="tile-line" data-en>Integrated an async Rust engine to improve parallel data-fetch performance.</span>
+          </button>
+          <button type="button" class="tile" data-kicker="2025–2026" data-title-he="אתר לקורס" data-title-en="Course site" data-body-he="אפליקציית Web בארכיטקטורת MVC. פותח ב-Node.js, Express, ו-MongoDB עם מערכת אותנטיקציה וניהול נתונים." data-body-en="You sign in, and only then you enter the course site.
 I wrote it in JavaScript: Node.js and Express on the server, and MongoDB stores the data.">
             <span class="tag">2025–2026</span>
             <span class="tile-title" data-he>אתר לקורס</span>
             <span class="tile-title" data-en>Course site</span>
-            <span class="tile-line" data-he>מתחברים עם משתמש, ורק אז נכנסים לאתר הקורס. הכנתי אותו ב-Node.js עם Express, ו-MongoDB שומר את הנתונים.</span>
+            <span class="tile-line" data-he>אפליקציית Web בארכיטקטורת MVC. פותח ב-Node.js, Express, ו-MongoDB עם מערכת אותנטיקציה וניהול נתונים.</span>
             <span class="tile-line" data-en>You sign in, and only then you enter the course site. I built it in Node.js with Express, and MongoDB stores the data.</span>
           </button>
-          <button type="button" class="tile" data-kicker="2024" data-title-he="דשבורד עסקאות" data-title-en="Transactions dashboard" data-body-he="במקום סכום כולל אחד, רואים את העסקאות לפי חתך.
-פרויקט סמסטריאלי של ארבעה חברי צוות, על כ-77 אלף רשומות. ניתחנו את הדאטה, הסקנו מסקנות, ובנינו כמה דשבורדים ב-Tableau. בסוף הצגנו את העבודה וענינו על שאלות." data-body-en="Instead of one grand total, you see the transactions by slice.
+          <button type="button" class="tile" data-kicker="2024" data-title-he="דשבורד עסקאות" data-title-en="Transactions dashboard" data-body-he="דשבורד אינטראקטיבי לניתוח עסקאות, חיתוך נתונים (Slicing) וזיהוי אנומליות, המאפשר קבלת החלטות מבוססות-נתונים." data-body-en="Instead of one grand total, you see the transactions by slice.
 A semester project with four teammates, on about 77,000 records. We analyzed the data, drew conclusions, and built several dashboards in Tableau. At the end we presented the work and answered questions.">
             <span class="tag">2024</span>
             <span class="tile-title" data-he>דשבורד עסקאות</span>
             <span class="tile-title" data-en>Transactions dashboard</span>
-            <span class="tile-line" data-he>במקום סכום כולל אחד, רואים את העסקאות לפי חתך. הכנתי את הדשבורד ב-Tableau, כדי שאפשר יהיה לראות מאיזה חלק מגיע כל מספר.</span>
+            <span class="tile-line" data-he>דשבורד אינטראקטיבי לניתוח עסקאות, חיתוך נתונים (Slicing) וזיהוי אנומליות, המאפשר קבלת החלטות מבוססות-נתונים.</span>
             <span class="tile-line" data-en>Instead of one grand total, you see the transactions by slice. I built the dashboard in Tableau, so you can see which part each number comes from.</span>
           </button>
+          <p class="cards-subhead" data-he>פרויקטי צד / פיתוח משחקים</p>
+          <p class="cards-subhead" data-en>Side projects / game dev</p>
           <button type="button" class="tile" data-kicker="GitHub" data-href="https://github.com/noam2177/bloomgrid" data-title-he="BloomGrid" data-title-en="BloomGrid" data-body-he="פאזל בלוקים על לוח 8×8: פותחים ומשחקים, בלי אינטרנט ובלי חשבון.
 יצרתי את המשחק ב-Godot, בשפת GDScript, והוא רץ מקומית על המחשב. בדיקות עזר כתבתי ב-Python." data-body-en="A block puzzle on an 8×8 board: you open it and play, offline and without an account.
 I created the game in Godot, in GDScript, and it runs locally on the computer. I wrote helper tests in Python.">
@@ -225,9 +236,9 @@ I prepared both in Python. he-segment splits the preposition off the word, and h
             <h2 data-en>Skills</h2>
           </header>
           <div class="pills">
-            <span>Python</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>SQL</span>
-            <span>pytest</span><span>Git</span><span>Linux</span><span>Tableau</span><span>Excel</span>
-            <span>OCR</span><span>FinOps</span><span>Node.js</span><span>MongoDB</span>
+            <span>Python</span><span>SQL</span><span>Rust (Basic)</span><span>FastAPI</span><span>DuckDB</span>
+            <span>Pandas</span><span>pytest</span><span>Git</span><span>Playwright</span><span>GCP</span>
+            <span>Tableau</span><span>OCR</span><span>Node.js</span>
           </div>
         </div>
       </section>
